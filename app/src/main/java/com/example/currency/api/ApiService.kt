@@ -2,9 +2,10 @@ package com.example.currency.api
 
 import com.example.currency.pojo.CoinInfoListOfData
 import com.example.currency.pojo.CoinPriceInfoRawData
+import io.reactivex.rxjava3.core.Single
 import retrofit2.http.GET
 import retrofit2.http.Query
-import rx.Single
+
 
 interface ApiService {
 
