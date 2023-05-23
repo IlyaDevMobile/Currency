@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import com.google.gson.annotations.Expose
 
 import com.google.gson.annotations.SerializedName
-
+import io.reactivex.rxjava3.annotations.NonNull
 
 
 @Entity(tableName = "full_price_list")
