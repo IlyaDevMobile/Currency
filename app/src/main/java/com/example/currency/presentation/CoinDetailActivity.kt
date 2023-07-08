@@ -1,10 +1,9 @@
-package com.example.currency
+package com.example.currency.presentation
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.currency.databinding.ActivityCoinDetailBinding
@@ -45,7 +44,7 @@ class CoinDetailActivity : AppCompatActivity() {
         private const val EXTRA_FROM_SYMBOL = "fSym"
 
         fun newIntent(context: Context, fromSymbol: String): Intent{
-            val intent = Intent(context,CoinDetailActivity::class.java)
+            val intent = Intent(context, CoinDetailActivity::class.java)
             intent.putExtra(EXTRA_FROM_SYMBOL, fromSymbol)
             return intent
         }

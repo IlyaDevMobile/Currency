@@ -1,12 +1,11 @@
-package com.example.currency
+package com.example.currency.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.currency.adapters.CoinInfoAdapter
 import com.example.currency.databinding.ActivityCoinPriceListBinding
-import com.example.currency.pojo.CoinPriceInfo
+import com.example.currency.data.model.CoinPriceInfo
 
 
 class CoinPriceListActivity : AppCompatActivity() {

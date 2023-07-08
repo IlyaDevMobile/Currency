@@ -1,13 +1,13 @@
-package com.example.currency
+package com.example.currency.presentation
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import com.example.currency.api.ApiFactory
-import com.example.currency.database.AppDatabase
-import com.example.currency.pojo.CoinPriceInfo
-import com.example.currency.pojo.CoinPriceInfoRawData
+import com.example.currency.data.network.ApiFactory
+import com.example.currency.data.database.AppDatabase
+import com.example.currency.data.model.CoinPriceInfo
+import com.example.currency.data.model.CoinPriceInfoRawData
 import com.google.gson.Gson
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers

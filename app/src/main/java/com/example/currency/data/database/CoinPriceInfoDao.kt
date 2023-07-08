@@ -1,11 +1,10 @@
-package com.example.currency.database
+package com.example.currency.data.database
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.currency.pojo.CoinPriceInfo
+import com.example.currency.data.model.CoinPriceInfo
 
 
 @androidx.room.Dao

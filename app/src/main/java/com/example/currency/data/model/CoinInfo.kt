@@ -1,4 +1,4 @@
-package com.example.currency.pojo
+package com.example.currency.data.model
 
 import android.media.Rating
 import com.google.gson.annotations.Expose
