@@ -1,7 +1,7 @@
-package com.example.currency.api
+package com.example.currency.data.network
 
-import com.example.currency.pojo.CoinInfoListOfData
-import com.example.currency.pojo.CoinPriceInfoRawData
+import com.example.currency.data.model.CoinInfoListOfData
+import com.example.currency.data.model.CoinPriceInfoRawData
 import io.reactivex.rxjava3.core.Single
 import retrofit2.http.GET
 import retrofit2.http.Query

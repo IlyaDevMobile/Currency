@@ -1,8 +1,8 @@
-package com.example.currency.pojo
+package com.example.currency.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.currency.api.ApiFactory.BASE_IMAGE_URL
+import com.example.currency.data.network.ApiFactory.BASE_IMAGE_URL
 import com.example.currency.utils.convertTimestampToTime
 import com.google.gson.annotations.Expose
 
@@ -205,7 +205,7 @@ data class CoinPriceInfo (
 
     @SerializedName("IMAGEURL")
     @Expose
-    val imageurl: String? = null
+    val imageurl: String?
 ) {
     fun getFormattedTime(): String {
         return convertTimestampToTime(lastupdate)

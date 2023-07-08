@@ -1,14 +1,12 @@
-package com.example.currency.adapters
+package com.example.currency.presentation
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.currency.R
 import com.example.currency.databinding.ItemCoinInfoBinding
-import com.example.currency.pojo.CoinInfo
-import com.example.currency.pojo.CoinPriceInfo
+import com.example.currency.data.model.CoinPriceInfo
 import com.squareup.picasso.Picasso
 
 
