@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 
-fun convertTimestampToTime(timestamp: Int?): String{
+fun convertTimestampToTime(timestamp: Long?): String{
     if (timestamp == null) return ""
     val stamp = Timestamp((timestamp * 1000).toLong())
     val date = Date(stamp.time)

@@ -1,4 +1,4 @@
-package com.example.currency.data.model
+package com.example.currency.data.network.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -11,7 +11,7 @@ import io.reactivex.rxjava3.annotations.NonNull
 
 
 @Entity(tableName = "full_price_list")
-data class CoinPriceInfo (
+data class CoinInfoDto (
     @SerializedName("TYPE")
     @Expose
     val type: String? = null,
@@ -37,11 +37,11 @@ data class CoinPriceInfo (
 
     @SerializedName("PRICE")
     @Expose
-    val price: Double? = null,
+    val price: String? = null,
 
     @SerializedName("LASTUPDATE")
     @Expose
-    val lastupdate: Int? = null,
+    val lastupdate: Long? = null,
 
     @SerializedName("MEDIAN")
     @Expose
@@ -81,7 +81,7 @@ data class CoinPriceInfo (
 
     @SerializedName("HIGHDAY")
     @Expose
-    val highday: Double? = null,
+    val highday: String? = null,
 
     @SerializedName("LOWDAY")
     @Expose
