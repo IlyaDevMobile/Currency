@@ -1,11 +1,13 @@
-package com.example.currency.domain
+package com.example.currency.data.database
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 
 
-
-data class CoinInfo(
-
-
+@Entity(tableName = "full_price_list")
+data class CoinInfoDbModel(
+    @PrimaryKey
     val fromsymbol: String,
     val tosymbol: String?,
     val price: String?,
@@ -16,5 +18,4 @@ data class CoinInfo(
 
     val lastmarket: String?,
     val imageurl: String?
-
 )

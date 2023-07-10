@@ -4,18 +4,17 @@ import androidx.lifecycle.LiveData
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.currency.data.model.CoinPriceInfo
 
 
 @androidx.room.Dao
-interface CoinPriceInfoDao {
+interface CoinInfoDao {
     @Query("SELECT * FROM full_price_list ORDER BY lastUpdate DESC" +
             "")
-    fun getPriceList():LiveData<List<CoinPriceInfo>>
+    fun getPriceList():LiveData<List<CoinInfoDbModel>>
 
     @Query("SELECT * FROM full_price_list WHERE fromSymbol == :fStm LIMIT 1 ")
-    fun getPriceInfoAboutCoin(fStm: String): LiveData<CoinPriceInfo>
+    fun getPriceInfoAboutCoin(fStm: String): LiveData<CoinInfoDbModel>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertPriceList(priceList: List<CoinPriceInfo>)
+    fun insertPriceList(priceList: List<CoinInfoDbModel>)
 }
